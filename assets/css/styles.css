@@ -2,3 +2,12 @@ body {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     background-color: black;
 }
+
+.banner {
+    background-color: darkslategrey;
+}
+
+.gems {
+    width: 100px;
+    height: 100px;
+}
