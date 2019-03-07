@@ -17,43 +17,62 @@
 
     <div class="row">
       <div class="col-lg-8">
-        <p>You will be given a random number as a Target Score at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to Your Score. The value of each crystal is hidden from you until you click on it.</p>
-        <p>You win the game when Your Score matches the Target Score.</p>
-        <p>You lose the game if Your Score goes above the Target Score.</p>
-        <p>Each time the game starts, the game will change the values of each crystal.</p>
+        <p>You will be given a random number as a Target Score at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to Your Score. The value of each crystal is hidden from you until you click on it. Each time the game starts, the game will change the values of each crystal.</p>
+        <ul>
+          <li>You win the game when Your Score matches the Target Score.</li>
+          <li>You lose the game if Your Score goes above the Target Score.</li>
+        </ul>
       </div>
     </div>
 
     <div class="row py-2 rounded banner">
-      <div class="col-lg-4"><h2>Target Score: <span id="target" class="badge badge-light shadow">0</span></h2></div>
-      <div class="col-lg-3"><h2>Your Score: <span id="score" class="badge badge-light shadow">0</span></h2></div>
+      <div class="col-lg-4"><h2>Target Score: <span id="target-score" class="badge badge-light shadow"></span></h2></div>
+      <div class="col-lg-3"><h2>Your Score: <span id="player-score" class="badge badge-light shadow"></span></h2></div>
     </div>
 
     <div class="row py-3">
       <div class="col-lg-2">
         <input id="emerald" class="btTxt submit gems" type="image" src="assets/images/emerald.png" alt="emerald" value="">
-        <span id="emeraldBadge" class="badge badge-light shadow invisible">14</span>
+        <span id="emerald-badge" class="badge badge-light shadow"></span>
       </div>
       <div class="col-lg-2">
         <input id="onyx" class="btTxt submit gems" type="image" src="assets/images/onyx.png" alt="onyx" value="">
-        <span id="onyxBadge" class="badge badge-light shadow invisible">23</span>
+        <span id="onyx-badge" class="badge badge-light shadow"></span>
       </div>
       <div class="col-lg-2">
         <input id="ruby" class="btTxt submit gems" type="image" src="assets/images/ruby.png" alt="ruby" value="">
-        <span id="rubyBadge" class="badge badge-light shadow invisible">32</span>
+        <span id="ruby-badge" class="badge badge-light shadow"></span>
       </div>
       <div class="col-lg-2">
         <input id="sapphire" class="btTxt submit gems" type="image" src="assets/images/sapphire.png" alt="sapphire" value="">
-        <span id="sapphireBadge" class="badge badge-light shadow invisible">25</span>
+        <span id="sapphire-badge" class="badge badge-light shadow"></span>
       </div>
     </div>
 
     <div class="row py-2 rounded banner">
-      <div class="col-lg-2"><h3>Wins: <span id="wins" class="badge badge-light shadow">0</span></h3></div>
-      <div class="col-lg-2"><h3>Losses: <span id="losses" class="badge badge-light shadow">0</span></h3></div>
+      <div class="col-lg-2"><h3>Wins: <span id="wins" class="badge badge-light shadow"></span></h3></div>
+      <div class="col-lg-2"><h3>Losses: <span id="losses" class="badge badge-light shadow"></span></h3></div>
     </div>
 
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="gameOverModal" tabindex="-1" role="dialog" aria-labelledby="gameOverModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h4 class="modal-title" id="gameOverModalLabel">Game Over!</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="gameOverModalBody" class="modal-body bg-dark text-white">
+      </div>
+      <div class="modal-footer bg-dark text-white">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Start New Game</button>
+      </div>
+    </div>
   </div>
 </div>
 
